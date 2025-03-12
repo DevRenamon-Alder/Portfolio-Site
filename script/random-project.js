@@ -13,3 +13,5 @@ const randomizeProject = () => {
         console.log("invalid projectNum");
     }
 }
+
+randomizeProject();
