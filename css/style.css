@@ -27,6 +27,10 @@ li a {
     text-align: center;
 }
 
+li.border {
+    font-size: 2.5rem;
+}
+
 a {
     color: black;
 }
@@ -47,8 +51,6 @@ main {
     border: groove 2px #374f3d;
     margin-top: 10px;
     margin-bottom: 10px;
-    height: 80vh;
-    width: 90vw;
     margin: auto;
     margin-top: 1vh;
     text-align: center;
@@ -61,24 +63,32 @@ h1 {
 
 h2 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+}
+
+h2.home, h2.projects{
     margin-left: 15vw;
-    font-size: 1.3em;
+}
+
+h2.contacts {
+    margin-left: 0;
+    display: inline;
 }
 
 h3 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 10vw;
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 p {
     font-family: 'Courier New', Courier, monospace;
     margin-left: 2vw;
     font-size: 1.1rem;
-    font-weight: 580;
+    font-weight: 500;
 }
 
-.project {
+.section {
     width: 98vw;
     margin: auto;
     margin-top: 10px;
@@ -90,28 +100,287 @@ span.fa-brands {
     width: auto;
 }
 
-h2.project {
-    margin-left: 10vw;
-}
-
-.icon {
-    margin-left: 1vw;
-    margin-right: 3vw;
-}
-
-#date-stamp {
-    font-size: 0.95em;
-}
-
-#icon {
+.contact-link {
     display: inline-block;
 }
 
-#icon-label {
-    margin-left: 0;
-    display: inline;
+.date-stamp {
+    font-size: 0.95rem;
 }
 
 #contacts {
     margin-bottom: 5vh;
+}
+
+@media screen and (min-width: 1px) and (max-width: 400px) {
+    /* Nav Bar */
+
+    ul {
+        justify-content: space-evenly;
+        padding-left: 0;
+    }
+
+    li a {
+        font-size: 1.3rem;
+    }
+
+    li.border {
+        font-size: 1.3rem;
+        position: relative;
+        bottom: 1px;
+    }
+
+    /* General / Home Page */
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.26rem;
+    }
+
+    .date-stamp {
+        font-weight: 600;
+    }
+
+    main.about {
+        height: auto;
+        width: auto;
+        border-left: none;
+        border-right: none;
+    }
+
+    .top-space {
+        height: 15px
+    }
+
+    .bottom-space {
+        height: 45px;
+    }
+
+    /* Contacts Page */
+    h2.contacts {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    /* Nav Bar */
+
+    ul {
+        justify-content: space-evenly;
+        padding-left: 0;
+    }
+
+    li a {
+        font-size: 1.6rem;
+    }
+
+    li.border {
+        font-size: 1.6rem;
+    }
+
+    /* General / Home Page */
+
+    section {
+        border-left: none;
+        border-right: none;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-left: 10vw;
+    }
+
+    p.home {
+        font-size: .98rem;
+    }
+
+    /* About Page */
+
+    main.about {
+        height: auto;
+        width: auto;
+        border-left: none;
+        border-right: none;
+    }
+
+    .top-space {
+        height: 15px
+    }
+
+    .bottom-space {
+        height: 45px;
+    }
+
+    p.about {
+        font-size: 1.25rem;
+    }
+
+    /* Contacts Page */
+    h2.contacts {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    /* Nav Bar */
+
+    li.border {
+        font-size: 2.5rem;
+    }
+
+    /* General / Home Page */
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2.home {
+        font-size: 2rem;
+        margin-left: 10vw;
+    }
+    
+    p.home {
+        font-size: 1.8rem;
+    }
+
+    .date-stamp {
+        font-size: 1.6rem;
+    }
+
+    /* About Page */
+
+    main.about {
+        height: auto;
+        width: auto;
+        border-left: none;
+        border-right: none;
+    }
+
+    .top-space {
+        height: 15px
+    }
+
+    .bottom-space {
+        height: 45px;
+    }
+
+
+    p.about {
+        font-size: 1.8rem;
+    }
+
+    /* Projects Page */
+    h2.projects {
+        font-size: 1.6rem;
+        margin-left: 10vw;
+    }
+
+    h3.projects {
+        font-size: 1.6rem;
+    }
+
+    h2.rpg {
+        font-size: 2rem;
+        margin-left: 15vw;
+    }
+
+    p.projects {
+        font-size: 1.6rem;
+    }
+
+    /* Contacts Page */
+    h2.contacts {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1300px) {
+    /* Nav Bar */
+
+    li.border {
+        font-size: 2.5rem;
+    }
+
+    /* General / Home Page */
+
+    h1.home {
+        font-size: 2.5rem;
+    }
+
+    h2.home {
+        font-size: 2rem;
+        margin-left: 10vw;
+    }
+    
+    p.home {
+        font-size: 1.8rem;
+    }
+
+    .date-stamp {
+        font-size: 1.6rem;
+    }
+
+    /* About Page */
+
+    main.about {
+        height: auto;
+        width: auto;
+        border-left: none;
+        border-right: none;
+    }
+
+    .top-space {
+        height: 15px
+    }
+
+    .bottom-space {
+        height: 45px;
+    }
+
+    h1.about {
+        font-size: 2.8rem;
+    }
+
+
+    p.about {
+        font-size: 1.8rem;
+    }
+
+    /* Projects Page */
+    h2.projects {
+        font-size: 1.8rem;
+        margin-left: 10vw;
+    }
+
+    h3.projects {
+        font-size: 1.8rem;
+    }
+
+    h2.rpg {
+        font-size: 2rem;
+        margin-left: 15vw;
+    }
+
+    p.projects {
+        font-size: 1.8rem;
+    }
+
+    /* Contacts Page */
+    h2.contacts {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1301px) {
+    main {
+        width: 60vw;
+        margin-top: 5vh;
+    }
 }
